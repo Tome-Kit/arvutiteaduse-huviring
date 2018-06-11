@@ -1,0 +1,6 @@
+@charset "UTF-8";
+div {
+	background-color: hsla(0, 100%, 0%, 1);
+	width: 100px;
+	height: 100px;
+}

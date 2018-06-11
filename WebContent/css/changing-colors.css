@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+	background: repeating-radial-gradient(red 5px, blue 10px, yellow 20px,
+		brown 20px, green 20px);
+}
+
+div {
+	width: 100px;
+	height: 100px;
+}
