@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+html {
+	font-size: 18px;
+}
+
+header {
+	color: darkgrey;
+	text-align: right;
+}
+
+article {
+	width: 32.5rem;
+	float: left;
+}
+
+section {
+	width: 30rem;
+	border: 0.225rem dashed grey;
+	margin: 1.25rem;
+}
+
+div {
+	float: right;
+	height: 6.25rem;
+	width: 10rem;
+	background-color: grey;
+	padding: 1rem;
+}

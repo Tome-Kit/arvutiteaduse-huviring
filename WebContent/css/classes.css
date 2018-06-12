@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.Header {
+	background-color: lightblue;
+	padding: 25px;
+	text-align: center;
+	font-size: 18pt;
+	height: 25%;
+}
+
+.Title {
+	font-size: 14pt;
+	text-align: center;
+	color: green;
+}
+
+.Body {
+	margin: 20px;
+}
