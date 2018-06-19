@@ -43,6 +43,7 @@ class TrafficLights {
 			document.querySelector("div.Green").style.backgroundColor = "hsla(120, 100%, 50%, 1)";
 			let timeout = trafficLights.isBlinking ? 1000 : 3000;
 			if (TrafficLights.counter > 2) {
+				TrafficLights.counter = 0;
 				setTimeout(() => {
 					this.turn({
 						"color": "yellow",
@@ -50,6 +51,11 @@ class TrafficLights {
 					})
 				}, timeout);
 			} else {
+				if (undefined === TrafficLights.counter) {
+					TrafficLights.counter = 1;
+				} else {
+					TrafficLights.counter ++;
+				}
 				setTimeout(() => {
 					this.turn({
 						"color": "black",
@@ -63,11 +69,6 @@ class TrafficLights {
 			document.querySelector("div.Red").style.backgroundColor = "hsla(0, 100%, 0%, 1)";
 			document.querySelector("div.Yellow").style.backgroundColor = "hsla(60, 100%, 0%, 1)";
 			document.querySelector("div.Green").style.backgroundColor = "hsla(120, 100%, 0%, 1)";
-			if (undefined === TrafficLights.counter) {
-				TrafficLights.counter = 1;
-			} else {
-				TrafficLights.counter ++;
-			}
 			setTimeout(() => {
 				this.turn({
 					"color": "green",
