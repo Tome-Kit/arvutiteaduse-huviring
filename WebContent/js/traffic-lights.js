@@ -2,6 +2,10 @@
  * 
  */
 class TrafficLights {
+	constructor(){
+		var vid = document.querySelector("video");
+		vid.volume = 1;
+	}
 	turn(trafficLights){
 		switch(trafficLights.color){
 		case "red":{
