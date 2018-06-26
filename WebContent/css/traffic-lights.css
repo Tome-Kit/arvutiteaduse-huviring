@@ -1,6 +1,36 @@
 @charset "UTF-8";
-div {
+
+body, figure {
+	margin: 0;
+}
+
+div.TrafficLights {
 	background-color: hsla(0, 100%, 0%, 1);
-	width: 100px;
-	height: 100px;
+}
+
+div.Background {
+	display: grid;
+}
+
+video {
+	position: fixed;
+	left: 0;
+	top: 0;
+	min-height: 100vh;
+}
+
+div.TrafficLights {
+	background: transparent;
+	justify-content: center;
+	width: 260px;
+	height: 100vh;
+	z-index: 1;
+	margin-left: 300px;
+}
+
+div.Light {
+	box-shadow: inset 0px 0px 10px #14171f, 0 0 10px #c0f5ff;
+	width: 260px;
+	height: 33.3vh;
+	border-radius: 20px;
 }
