@@ -4,6 +4,10 @@ body, figure {
 	margin: 0;
 }
 
+div.TrafficLights {
+	background-color: hsla(0, 100%, 0%, 1);
+}
+
 div.Background {
 	display: grid;
 }
@@ -16,6 +20,8 @@ video {
 }
 
 div.TrafficLights {
+	background: transparent;
+	justify-content: center;
 	width: 260px;
 	height: 100vh;
 	z-index: 1;
